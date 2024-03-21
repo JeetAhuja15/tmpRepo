@@ -2,40 +2,32 @@
 # Calculator Program in Python by using input() and format() functions
 
 # Prompting input from the user
-n1 = int(input("Enter the first number: "))
-n2 = int(input("Enter the second number: "))
+n1 = float(input("Enter first number: "))
+n2 = float(input("Enter second number: "))
 
-# Function to add two numbers
-def add_two_numbers(num1, num2):
-    return num1 + num2
+# addition
+def add_two_num(x, y):
+    return x + y
 
-# Function to subtract two numbers
-def subtract_two_numbers(num1, num2):
-    return num1 - num2
+print("{} + {} = {}".format(n1, n2, add_two_num(n1, n2)))
 
-# Function to multiply two numbers
-def multiply_two_numbers(num1, num2):
-    return num1 * num2
+# subtraction
+def subtract_two_num(x, y):
+    return x - y
 
-# Function to divide two numbers
-def divide_two_numbers(num1, num2):
-    if num2 != 0:
-        return num1 / num2
+print("{} - {} = {}".format(n1, n2, subtract_two_num(n1, n2)))
+
+# multiplication
+def multiply_two_num(x, y):
+    return x * y
+
+print("{} * {} = {}".format(n1, n2, multiply_two_num(n1, n2)))
+
+# division
+def divide_two_num(x, y):
+    if y == 0:
+        return "Error! Division by zero."
     else:
-        return "You cannot divide by zero!"
+        return x / y
 
-# Addition
-addition_result = add_two_numbers(n1, n2)
-print("{} + {} = {}".format(n1, n2, addition_result))
-
-# Subtraction
-subtraction_result = subtract_two_numbers(n1, n2)
-print("{} - {} = {}".format(n1, n2, subtraction_result))
-
-# Multiplication
-multiplication_result = multiply_two_numbers(n1, n2)
-print("{} * {} = {}".format(n1, n2, multiplication_result))
-
-# Division
-division_result = divide_two_numbers(n1, n2)
-print("{} / {} = {}".format(n1, n2, division_result))
+print("{} / {} = {}".format(n1, n2, divide_two_num(n1, n2)))
