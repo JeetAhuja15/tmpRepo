@@ -1,7 +1,6 @@
 # Basic Calculations
 # Calculator Program in Python by using input() and format() functions
- 
-#Promting input from the user
+
  
 
 #addition
