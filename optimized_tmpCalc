@@ -6,28 +6,32 @@ n1 = float(input("Enter first number: "))
 n2 = float(input("Enter second number: "))
 
 # addition
-def add_two_num(x, y):
-    return x + y
+def add_two_num(num1, num2):
+    return num1 + num2
 
 print("{} + {} = {}".format(n1, n2, add_two_num(n1, n2)))
 
 # subtraction
-def subtract_two_num(x, y):
-    return x - y
+def subtract_two_num(num1, num2):
+    return num1 - num2
 
 print("{} - {} = {}".format(n1, n2, subtract_two_num(n1, n2)))
 
 # multiplication
-def multiply_two_num(x, y):
-    return x * y
+def multiply_two_num(num1, num2):
+    return num1 * num2
 
 print("{} * {} = {}".format(n1, n2, multiply_two_num(n1, n2)))
 
 # division
-def divide_two_num(x, y):
-    if y == 0:
-        return "Error! Division by zero."
+def divide_two_num(num1, num2):
+    # Check if the divisor is not zero
+    if num2 != 0:
+        return num1 / num2
     else:
-        return x / y
+        return "Error: Division by zero"
 
 print("{} / {} = {}".format(n1, n2, divide_two_num(n1, n2)))
+
+# The temporary function (tmpFunc) from the original file seems to be unrelated to calculator functionality
+# If it's not used, it should be removed. If it is a placeholder for future code, consider adding a relevant comment or implement the function.
