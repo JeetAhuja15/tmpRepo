@@ -1,37 +1,61 @@
 # Basic Calculations
 # Calculator Program in Python by using input() and format() functions
 
-# Prompting input from the user
-n1 = float(input("Enter first number: "))
-n2 = float(input("Enter second number: "))
-
-# addition
-def add_two_num(num1, num2):
+def add_two_numbers(num1, num2):
+    """
+    Adds two numbers and prints the result.
+    
+    :param num1: First number to add
+    :param num2: Second number to add
+    """
     return num1 + num2
 
-print("{} + {} = {}".format(n1, n2, add_two_num(n1, n2)))
-
-# subtraction
-def subtract_two_num(num1, num2):
+def subtract_two_numbers(num1, num2):
+    """
+    Subtracts the second number from the first and prints the result.
+    
+    :param num1: Number from which to subtract
+    :param num2: Number to subtract
+    """
     return num1 - num2
 
-print("{} - {} = {}".format(n1, n2, subtract_two_num(n1, n2)))
-
-# multiplication
-def multiply_two_num(num1, num2):
+def multiply_two_numbers(num1, num2):
+    """
+    Multiplies two numbers and prints the result.
+    
+    :param num1: First number to multiply
+    :param num2: Second number to multiply
+    """
     return num1 * num2
 
-print("{} * {} = {}".format(n1, n2, multiply_two_num(n1, n2)))
-
-# division
-def divide_two_num(num1, num2):
-    # Check if the divisor is not zero
+def divide_two_numbers(num1, num2):
+    """
+    Divides the first number by the second and prints the result.
+    
+    :param num1: Number to divide
+    :param num2: Number by which to divide
+    """
     if num2 != 0:
         return num1 / num2
     else:
-        return "Error: Division by zero"
+        return "Error: Cannot divide by zero."
 
-print("{} / {} = {}".format(n1, n2, divide_two_num(n1, n2)))
+# Prompting input from the user
+n1 = int(input("Enter the first number: "))
+n2 = int(input("Enter the second number: "))
 
-# The temporary function (tmpFunc) from the original file seems to be unrelated to calculator functionality
-# If it's not used, it should be removed. If it is a placeholder for future code, consider adding a relevant comment or implement the function.
+# Addition
+addition_result = add_two_numbers(n1, n2)
+print(f"{n1} + {n2} = {addition_result}")
+
+# Subtraction
+subtraction_result = subtract_two_numbers(n1, n2)
+print(f"{n1} - {n2} = {subtraction_result}")
+
+# Multiplication
+multiplication_result = multiply_two_numbers(n1, n2)
+print(f"{n1} * {n2} = {multiplication_result}")
+
+# Division
+division_result = divide_two_numbers(n1, n2)
+print(f"{n1} / {n2} = {division_result}")
