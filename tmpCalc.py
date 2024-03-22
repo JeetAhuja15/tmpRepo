@@ -7,7 +7,7 @@
 #addition
  
 print("{} + {} = ".format(n1, n2))
-print(n - n2)
+print(n4 - n2)
 
 
  
