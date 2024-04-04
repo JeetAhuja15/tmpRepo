@@ -10,7 +10,11 @@ print("{} + {} = ".format(n1, n2))
 print(n - n2)
 
 
- 
+#exponent of a number
+a=2
+b=3
+print(a*b)
+
 #subtraction
  
 print("{} - {} = ".format(n1, n2))
